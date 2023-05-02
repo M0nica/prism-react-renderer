@@ -123,7 +123,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 
 ### Custom Language Support
 
-By default `prism-react-renderer` only includes a [base set of languages](https://github.com/FormidableLabs/prism-react-renderer/blob/c914fdea48625ba59c8022174bb3df1ed802ce4d/packages/generate-prism-languages/index.ts#L9-L23) that Prism supports. **Depending on your app's build system you may need to `await` the `import` or use `require` to ensure `window.Prism` exists before importing the custom languages.** You can add support for more by including their definitions from the main `prismjs` package:
+By default `prism-react-renderer` only includes a [base set of languages](https://github.com/FormidableLabs/prism-react-renderer/blob/d6c0605d701bfe2b126784bbc005b4eabc81e3a7/packages/generate-prism-languages/index.ts#L9-L23) that Prism supports. **Depending on your app's build system you may need to `await` the `import` or use `require` to ensure `window.Prism` exists before importing the custom languages.** You can add support for more by including their definitions from the main `prismjs` package:
 
 ```js
 import { Highlight, Prism } from "prism-react-renderer";
